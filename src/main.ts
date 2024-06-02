@@ -2,13 +2,16 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import { createMemoryHistory, createRouter } from 'vue-router'
+import { createPinia } from 'pinia'
 
 import HomePage from './pages/HomePage.vue'
-import AnotherPage from './pages/AnotherPage.vue'
+import AboutPage from './pages/AnotherPage.vue'
 
 const routes = [
   { path: '/', component: HomePage },
-  { path: '/another', component: AnotherPage },
+  { path: '/about', component: AboutPage },
+  { path: '/about', component: AboutPage },
+  
 ]
 
 const router = createRouter({
@@ -16,6 +19,9 @@ const router = createRouter({
   routes,
 })
 
+const pinia = createPinia()
+
 createApp(App)
   .use(router)
+  .use(pinia)
   .mount('#app')
