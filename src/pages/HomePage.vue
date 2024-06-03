@@ -1,5 +1,8 @@
-<script setup>
+<script setup lang="ts">
+import CardComponent from '../components/CardComponent.vue';
+
 </script>
-<template>
-    <h1>Home</h1>
+<template lang="pug">
+h1 Home
+
 </template>

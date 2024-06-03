@@ -1,6 +1,8 @@
 <script setup>
 import NavBar from '../src/components/NavBar.vue'
 
+
+
 </script>
 
 <template lang="pug">
